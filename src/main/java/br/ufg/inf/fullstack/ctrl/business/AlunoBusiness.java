@@ -34,8 +34,7 @@ public class AlunoBusiness {
 	
 	public Aluno update(Aluno alunoUpd) {
 		Aluno aluno = repository.findById(alunoUpd.getIdAluno()).get();
-		aluno.setEscolaridade(alunoUpd.getEscolaridade());
-		aluno.setPessoa(alunoUpd.getPessoa());
+		aluno.setAtivo(alunoUpd.getAtivo());
 		return repository.save(aluno);
 	}
 }

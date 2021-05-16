@@ -1,4 +1,4 @@
-package br.ufg.inf.model.entities;
+package br.ufg.inf.fullstack.model.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +19,7 @@ public class Matricula {
 	private Integer idMatricula;
 	
 	@ManyToOne
-	@Column(name="id_aluno")
+	@JoinColumn(name="id_aluno")
 	private Aluno aluno;
 	
 	@ManyToOne
@@ -32,6 +32,8 @@ public class Matricula {
 		this.aluno = aluno;
 		this.oferta = oferta;
 	}
+	
+	public Matricula() {}
 
 	public Integer getIdMatricula() {
 		return idMatricula;

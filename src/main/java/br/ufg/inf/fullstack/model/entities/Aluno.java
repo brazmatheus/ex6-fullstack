@@ -1,4 +1,4 @@
-package br.ufg.inf.model.entities;
+package br.ufg.inf.fullstack.model.entities;
 
 import java.util.Date;
 

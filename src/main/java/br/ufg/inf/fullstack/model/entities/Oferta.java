@@ -1,6 +1,7 @@
 package br.ufg.inf.fullstack.model.entities;
 
 import java.io.Serializable;
+import br.ufg.inf.fullstack.model.enums.Dia;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,8 +12,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import br.ufg.inf.fullstack.model.enums.Dia;
 
 @Entity
 @Table(name="tb_oferta")
@@ -32,13 +31,13 @@ public class Oferta implements Serializable{
 	private Professor professor;
 	
 	@ManyToOne
-	@JoinColumn(name="id_displina")
+	@JoinColumn(name="id_disciplina")
 	private Disciplina disciplina;
 	
-	@Column(name="data_incio")
+	@Column(name="dt_inicio")
 	private Date dtInicio;
 	
-	@Column(name="data_fim")
+	@Column(name="dt_fim")
 	private Date dtFim;
 	
 	@Column(name="dia")

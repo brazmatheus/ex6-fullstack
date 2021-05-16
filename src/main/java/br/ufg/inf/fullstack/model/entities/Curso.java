@@ -1,4 +1,4 @@
-package br.ufg.inf.model.entities;
+package br.ufg.inf.fullstack.model.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,7 +16,7 @@ public class Curso {
 	@Column(name="id_curso")
 	private Integer idCurso;
 	
-	@Column(name="nome")
+	@Column(name="nm_curso")
 	private String nmCurso;
 
 	public Curso() {

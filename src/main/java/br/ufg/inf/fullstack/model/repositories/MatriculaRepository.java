@@ -3,7 +3,8 @@ package br.ufg.inf.fullstack.model.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.ufg.inf.fullstack.model.entities.Disciplina;
+import br.ufg.inf.fullstack.model.entities.Matricula;
 
-public interface DisciplinaRepository extends JpaRepository<Disciplina, Integer>{
+public interface MatriculaRepository extends JpaRepository<Matricula, Integer>{
 
 }

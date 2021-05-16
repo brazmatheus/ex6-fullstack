@@ -34,8 +34,7 @@ public class CursoBusiness {
 	
 	public Curso update(Curso cursoUpd) {
 		Curso curso = repository.findById(cursoUpd.getIdCurso()).get();
-		curso.setEscolaridade(cursoUpd.getEscolaridade());
-		curso.setPessoa(cursoUpd.getPessoa());
+		curso.setNmCurso(cursoUpd.getNmCurso());
 		return repository.save(curso);
 	}
 }

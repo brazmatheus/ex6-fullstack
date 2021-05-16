@@ -34,8 +34,7 @@ public class MatriculaBusiness {
 	
 	public Matricula update(Matricula matricula) {
 		Matricula matriculaUpd = repository.findById(matricula.getIdMatricula()).get();
-		matriculaUpd.setCargaHoraria(matricula.getCargaHoraria());
-		matriculaUpd.setNmMatricula(matricula.getNmMatricula());
+		matriculaUpd.setOferta(matricula.getOferta());
 		return repository.save(matriculaUpd);
 		
 	}
